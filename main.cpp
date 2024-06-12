@@ -93,6 +93,9 @@ int main()
         std::cin >> hooksize;
     }
     YarnSkein yarn(strandWeight, color, length, fibType, skeinWeight, needlesize, hooksize);
+
+    std::string fiberlist = yarn.getFiberList();
+    std::cout << fiberlist << std::endl;
     return 0;
 }
 

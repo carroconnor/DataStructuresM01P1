@@ -1,5 +1,6 @@
 #ifndef YARN_H
 #define YARN_H
+#include <vector>
 #include <string>
 #include <map>
 #include <sstream>
@@ -57,13 +58,17 @@ class YarnSkein {
 
         void setColor(std::string color);
         void setLength(double length);
+        void setStrandWeight(weightType type);
+        void setSkeinWeight(double weight);
+        void setNeedleSize(double size);
+        void setHookSize(double size);
     
     private:
         double hookSize;
         double length;
         double needleSize;
         double skeinWeight;
-        fiberType fiber;
+        std::vector<fiberType> fiber;
         int numFiberType;
         std::string color;
         weightType strandWeight;
