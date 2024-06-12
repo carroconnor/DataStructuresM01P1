@@ -38,6 +38,7 @@ const std::map<YarnSkein::weightType, std::string> YarnSkein::weightToStr = {
 // constructor
 YarnSkein::YarnSkein(std::string _strandWeight, std::string _color, double _length, std::string _fiber, double _skeinWeight, double _needleSize, double _hookSize)
 {
+    std::transform(_strandWeight.begin(), _strandWeight.end(), _strandWeight.begin(), ::toupper); //transform to upper before attempting to set
     setStrandWeight(strToWeight.at(_strandWeight));
     setColor(_color);
     setLength(_length);

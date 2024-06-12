@@ -7,6 +7,15 @@ void resetStream();
 
 int main()
 {
+    YarnSkein test("lace", "blue", 12.3, "Wool, Acrylic, Bamboo, Cotton, Silk", 34.5, 4, 4.5);
+    YarnSkein test2("Super Fine", "blue", 12.3, "Wool, Acrylic, Bamboo, Cotton, Silk", 34.5, 4, 4.5);
+    YarnSkein test3("Fine", "blue", 12.3, "Wool, Acrylic, Bamboo, Cotton, Silk", 34.5, 4, 4.5);
+    YarnSkein test4("Light", "blue", 12.3, "Wool, Acrylic, Bamboo, Cotton, Silk", 34.5, 4, 4.5);
+    YarnSkein test5("Medium", "blue", 12.3, "Wool, Acrylic, Bamboo, Cotton, Silk", 34.5, 4, 4.5);
+    YarnSkein test6("Bulky", "blue", 12.3, "Wool, Acrylic, Bamboo, Cotton, Silk", 34.5, 4, 4.5);
+    YarnSkein test7("Super Bulky", "blue", 12.3, "Wool, Acrylic, Bamboo, Cotton, Silk", 34.5, 4, 4.5);
+    YarnSkein test8("Jumbo", "blue", 12.3, "Wool, Acrylic, Bamboo, Cotton, Silk", 34.5, 4, 4.5);
+
     std::string strandWeight, color, fibType;
     double skeinWeight, length, hooksize, needlesize;
     std::cout << "Welcome to the yarn creator!" << std::endl;
