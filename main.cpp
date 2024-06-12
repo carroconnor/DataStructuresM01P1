@@ -2,12 +2,15 @@
 #include <limits>
 #include <algorithm>
 #include "yarn.h"
+#include <cassert>
 
 void resetStream();
 
 int main()
 {
     YarnSkein test("lace", "blue", 12.3, "Wool, Acrylic, Bamboo, Cotton, Silk", 34.5, 4, 4.5);
+    assert(test.getNeedleSize() == 4);
+    assert(test.getHookSize() == 4.5);
     YarnSkein test2("Super Fine", "blue", 12.3, "Wool, Acrylic, Bamboo, Cotton, Silk", 34.5, 4, 4.5);
     YarnSkein test3("Fine", "blue", 12.3, "Wool, Acrylic, Bamboo, Cotton, Silk", 34.5, 4, 4.5);
     YarnSkein test4("Light", "blue", 12.3, "Wool, Acrylic, Bamboo, Cotton, Silk", 34.5, 4, 4.5);

@@ -167,7 +167,7 @@ void YarnSkein::setHookSize(double size){
     if(size < 0)
         throw std::invalid_argument("Invalid size: " + std::to_string(size));
 
-    this->needleSize = size;
+    this->hookSize = size;
 }
 
 void YarnSkein::setFiber(std::string fiberStr)
